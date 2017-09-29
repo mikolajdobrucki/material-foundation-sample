@@ -1,7 +1,7 @@
 {
-  "name": "foundation-sites-template",
+  "name": "material-design-sample",
   "version": "1.0.0",
-  "description": "Basic template for a new Foundation for Sites project.",
+  "description": "Sample Project for Material Foundation Project.",
   "main": "gulpfile.js",
   "devDependencies": {
     "gulp": "^3.9.0",
@@ -16,13 +16,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zurb/foundation-sites-template.git"
+    "url": "https://github.com/eucalyptuss/material-foundation-sample.git"
   },
-  "bugs": {
-    "url": "https://github.com/zurb/foundation-sites/issues",
-    "email": "foundation@zurb.com"
-  },
-  "author": "ZURB <foundation@zurb.com>",
+  "author": "Mikolaj Dobrucki <tease@mikolajdobrucki.com>",
   "license": "MIT",
   "private": true,
   "dependencies": {
