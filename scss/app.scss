@@ -1,14 +1,15 @@
 @charset 'utf-8';
 
+// @import 'util';
+@import 'util/util';
+
 // Material Foundation: Material Design color libarary
-@import
-  "style/color";
+@import "style/color";
 
 // Material Foundation: Global variables and styles
-@import
-  "global";
+@import "variables";
 
-@import 'settings';
+// @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
 
@@ -89,3 +90,5 @@
   "components/selection-controls",
   "components/tooltips",
   "components/summary";
+
+  @import "demo";
