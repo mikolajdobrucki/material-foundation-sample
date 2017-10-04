@@ -1,16 +1,15 @@
 @charset 'utf-8';
 
-// @import 'util';
 @import 'util/util';
 
 // Material Foundation: Material Design color libarary
-@import "style/color";
+@import "scss/style/color";
 
 // Material Foundation: Roboto fonts & icons
-@import "fonts";
+@import "scss/fonts";
 
 // Material Foundation: Global variables and styles
-@import "variables";
+@import "scss/variables";
 
 // @import 'settings';
 @import 'foundation';
@@ -58,7 +57,7 @@
 @include foundation-tooltip;
 @include foundation-top-bar;
 @include foundation-visibility-classes;
-// @include foundation-float-classes;
+@include foundation-float-classes;
 @include foundation-flex-classes;
 
 // @include foundation-prototype-classes;
@@ -68,30 +67,30 @@
 
 //  Material Foundation: Material Design - Core
 @import
-  "core/material",
-  "core/animation";
+  "scss/core/material",
+  "scss/core/animation";
 
 //  Material Foundation: Material Design - Style
 @import
-  // "style/icons",
-  "style/imagery",
-  "style/typography";
+  "scss/style/icons",
+  "scss/style/imagery",
+  "scss/style/typography";
 
 //  Material Foundation: Material Design - Components
 @import
-  "components/tabs",
-  "components/buttons",
-  "components/menus",
-  "components/cards",
-  "components/chips",
-  "components/data-tables",
-  "components/lists",
-  "components/toolbars",
-  "components/text-fields",
-  "components/progress-activity",
-  "components/sliders",
-  "components/selection-controls",
-  "components/tooltips",
-  "components/summary";
+  "scss/components/tabs",
+  "scss/components/buttons",
+  "scss/components/menus",
+  "scss/components/cards",
+  "scss/components/chips",
+  "scss/components/data-tables",
+  "scss/components/lists",
+  "scss/components/toolbars",
+  "scss/components/text-fields",
+  "scss/components/progress-activity",
+  "scss/components/sliders",
+  "scss/components/selection-controls",
+  "scss/components/tooltips",
+  "scss/components/summary";
 
   @import "demo";
