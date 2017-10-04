@@ -5,7 +5,7 @@ var sassPaths = [
   'bower_components/normalize.scss/sass',
   'bower_components/foundation-sites/scss',
   'bower_components/motion-ui/src',
-  'node_modules/materialfoundation/scss/'
+  'node_modules/materialfoundation'
 ];
 
 gulp.task('sass', function() {
@@ -20,6 +20,23 @@ gulp.task('sass', function() {
     }))
     .pipe(gulp.dest('css'));
 });
+
+var uglify = require('gulp-uglify');
+var concat = require('gulp-concat');
+
+gulp.task('js', function() {
+  return gulp.src([
+    './bower_components/jquery/dist/jquery.js',
+    './bower_components/what-input/dist/what-input.js',
+    './bower_components/foundation-sites/dist/js/foundation.js',
+    './node_modules/materialfoundation/js/switches.js',
+    './node_modules/materialfoundation/js/ripple.js',
+    './js/scripts.js',
+  ])
+    .pipe(concat('app.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('./js/'));
+})
 
 gulp.task('default', ['sass'], function() {
   gulp.watch(['scss/**/*.scss'], ['sass']);
