@@ -31,13 +31,14 @@ gulp.task('js', function() {
     './bower_components/foundation-sites/dist/js/foundation.js',
     './node_modules/materialfoundation/js/switches.js',
     './node_modules/materialfoundation/js/ripple.js',
+    './node_modules/materialfoundation/js/floating-label.js',
     './js/scripts.js',
   ])
     .pipe(concat('app.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('./js/'));
+    .pipe(gulp.dest('./scripts/'));
 })
 
-gulp.task('default', ['sass'], function() {
+gulp.task('default', ['sass','js'], function() {
   gulp.watch(['scss/**/*.scss','js/**/*.js'], ['js']);
 });
