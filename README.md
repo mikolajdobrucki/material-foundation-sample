@@ -30,7 +30,7 @@ bower install
 Finally, run `npm start` to run the Sass and Javascript compiler. It will re-run every time you save a Sass or Javascript file.
 
 
-## How it's done?
+## How is it done?
 
 To use Material Foundation along with the main Foundation Framework:
 * all the scss files are imported in [the main stylesheet](https://github.com/eucalyptuss/material-foundation-sample/blob/master/scss/app.scss)
