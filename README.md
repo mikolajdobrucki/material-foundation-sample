@@ -1,4 +1,4 @@
-# Material Foundation Sample Project
+# Material Foundation Starter Project
 
 ![Material Foundation](http://materialfoundation.mikolajdobrucki.com/assets/img/cover-sample.png)
 
