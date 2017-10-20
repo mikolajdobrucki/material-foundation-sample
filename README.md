@@ -1,8 +1,8 @@
-# Foundation for Sites Template
+# Material Foundation Sample Project
 
-**Please open all issues with this template on the main [Foundation for Sites](https://github.com/zurb/foundation-sites/issues) repo.**
+![Material Foundation](http://materialfoundation.mikolajdobrucki.com/assets/img/cover-sample.png)
 
-This is the basic starter project for [Foundation for Sites 6](http://foundation.zurb.com/sites). It includes a Sass compiler and a starter HTML file for you.
+This is the exemplary Material Foundation implementation based on a [Foundation Basic Template](https://foundation.zurb.com/sites/docs/starter-projects.html#basic-template).
 
 ## Installation
 
@@ -11,30 +11,12 @@ To use this template, your computer needs:
 - [NodeJS](https://nodejs.org/en/) (0.12 or greater)
 - [Git](https://git-scm.com/)
 
-This template can be installed with the Foundation CLI, or downloaded and set up manually.
+## Setup
 
-### Using the CLI
-
-Install the Foundation CLI with this command:
+To set up the template, first download it with Git:
 
 ```bash
-npm install foundation-cli --global
-```
-
-Use this command to set up a blank Foundation for Sites project with this template:
-
-```bash
-foundation new --framework sites --template basic
-```
-
-The CLI will prompt you to give your project a name. The template will be downloaded into a folder with this name.
-
-### Manual Setup
-
-To manually set up the template, first download it with Git:
-
-```bash
-git clone https://github.com/zurb/foundation-sites-template projectname
+git clone https://github.com/eucalyptuss/material-foundation-sample.git projectname
 ```
 
 Then open the folder in your command line, and install the needed dependencies:
@@ -45,4 +27,13 @@ npm install
 bower install
 ```
 
-Finally, run `npm start` to run the Sass compiler. It will re-run every time you save a Sass file.
+Finally, run `npm start` to run the Sass and Javascript compiler. It will re-run every time you save a Sass or Javascript file.
+
+
+## How it's done?
+
+To use Material Foundation along with the main Foundation Framework:
+* all the scss files are imported in [the main stylesheet](https://github.com/eucalyptuss/material-foundation-sample/blob/master/scss/app.scss)
+* all the javascript files are compiled with the rest of the scripts with gulp in [a gulpfile](https://github.com/eucalyptuss/material-foundation-sample/blob/master/gulpfile.js)
+
+Then, both compiled files are included in [index.html](https://github.com/eucalyptuss/material-foundation-sample/blob/master/index.html) as `style.css` and `app.js`.
