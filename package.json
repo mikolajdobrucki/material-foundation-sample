@@ -10,7 +10,7 @@
     "gulp-sass": "^2.1.0",
     "gulp-uglify": "^3.0.0",
     "gulp-concat": "^2.6.1",
-    "materialfoundation": "0.2.0"
+    "materialfoundation": "^0.2.2"
   },
   "scripts": {
     "start": "gulp",
